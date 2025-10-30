@@ -4,23 +4,22 @@ import type { NextRequest } from "next/server";
 export function middleware(_req: NextRequest) {
   const res = NextResponse.next();
 
-  // Content Security Policy (tight baseline)
   res.headers.set(
     "Content-Security-Policy",
     [
       "default-src 'self'",
       "img-src 'self' data: https:",
-      "script-src 'self'",
+      "script-src 'self' https://hcaptcha.com https://*.hcaptcha.com",
       "style-src 'self' 'unsafe-inline'",
       "font-src 'self' data: https:",
-      "connect-src 'self' https:",
+      "connect-src 'self' https: https://hcaptcha.com https://*.hcaptcha.com",
+      "frame-src 'self' https://hcaptcha.com https://*.hcaptcha.com",
       "frame-ancestors 'none'",
       "base-uri 'none'",
       "form-action 'self'",
     ].join("; ")
   );
 
-  // Extra hardening
   res.headers.set("X-Content-Type-Options", "nosniff");
   res.headers.set("X-Frame-Options", "DENY");
   res.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");

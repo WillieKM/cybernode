@@ -1,7 +1,22 @@
-export default function Page() {
+export default function Services() {
+  const items = [
+    { href: "/services/penetration-testing", title: "Penetration Testing", blurb: "Offensive testing to expose real risk." },
+    { href: "/services/vulnerability-management", title: "Vulnerability Management", blurb: "Continuous discovery & remediation." },
+    { href: "/services/incident-response", title: "Incident Response", blurb: "On-call IR with 1-hour SLA." },
+    { href: "/services/compliance", title: "Compliance Readiness", blurb: "NIST CSF, SOC2, HIPAA, PCI." },
+    { href: "/services/ai-integration", title: "AI Integration & Automation", blurb: "Secure chatbots, document AI, workflows." },
+  ];
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">✅ Services Page Works!</h1>
-    </main>
+    <section className="max-w-6xl mx-auto px-4 py-16">
+      <h1 className="text-4xl font-bold tracking-tight">Services</h1>
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
+        {items.map(s => (
+          <a key={s.href} href={s.href} className="rounded-2xl border border-slate-200 p-6 hover:shadow-md transition">
+            <div className="font-semibold">{s.title}</div>
+            <p className="text-slate-600 mt-2">{s.blurb}</p>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }

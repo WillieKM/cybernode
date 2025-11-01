@@ -1,0 +1,8 @@
+<section className="max-w-6xl mx-auto px-4 py-16">
+  <h1 className="text-4xl font-bold tracking-tight">Our Expertise</h1>
+  <p className="mt-4 text-slate-600 max-w-2xl">
+    Cyber-Node provides full-spectrum cybersecurity and AI-driven automation
+    services — from penetration testing to continuous monitoring and intelligent
+    response. Each engagement is led by senior engineers focused on measurable
+    results, not boilerplate reports.
+  </p>

@@ -1,34 +1,21 @@
-export default function Page() {
+export default function AIIntegration() {
   return (
-    <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
-      <h1 className="text-4xl font-bold tracking-tight">AI Integration & Automation</h1>
-      <p className="text-slate-600 text-lg leading-relaxed">
-        Empower your security operations with intelligent automation. Cyber-Node
-        integrates AI safely and effectively into existing workflows — from
-        chatbots and document intelligence to predictive analytics and
-        automated threat detection.
+    <section className="max-w-4xl mx-auto px-4 py-20 space-y-6">
+      <h1 className="text-4xl font-bold tracking-tight">AI Integration</h1>
+      <p className="text-slate-600">
+        Cyber-Node helps organizations securely integrate artificial intelligence into daily operations. 
+        From model deployment to API security and data privacy, we ensure your AI systems are resilient, 
+        compliant, and ethically aligned.
       </p>
-
-      <h2 className="text-2xl font-semibold mt-8">Capabilities</h2>
       <ul className="list-disc pl-6 text-slate-600 space-y-2">
-        <li>AI-assisted security monitoring and risk analysis</li>
-        <li>Chatbots and virtual assistants for SOC and IT teams</li>
-        <li>Document understanding and automated data classification</li>
-        <li>Predictive analytics for risk, capacity, and threat modeling</li>
-        <li>Custom AI integrations across M365, Google Workspace, Slack, Jira, and more</li>
+        <li>Secure model hosting and access control</li>
+        <li>Data anonymization and encryption workflows</li>
+        <li>Threat modeling for AI pipelines</li>
+        <li>Regulatory alignment with GDPR, ISO 42001, and NIST AI RMF</li>
       </ul>
-
-      <h2 className="text-2xl font-semibold mt-8">Our Approach</h2>
-      <ol className="list-decimal pl-6 text-slate-600 space-y-2">
-        <li><b>Discover:</b> Identify opportunities to safely apply AI.</li>
-        <li><b>Design:</b> Architect and test secure, explainable solutions.</li>
-        <li><b>Deploy:</b> Implement with clear guardrails and governance.</li>
-        <li><b>Optimize:</b> Measure performance and continuously improve.</li>
-      </ol>
-
-      <a href="/contact" className="inline-flex items-center rounded-2xl px-6 py-3 font-medium shadow-sm bg-sky-600 text-white hover:bg-sky-700">
-        Schedule an AI consultation
-      </a>
+      <p className="text-slate-600">
+        We make AI adoption safe, responsible, and scalable—empowering innovation without compromising trust.
+      </p>
     </section>
   );
 }

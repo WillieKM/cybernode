@@ -1,11 +1,16 @@
 export default function NotFound() {
   return (
-    <section className="min-h-[60vh] max-w-3xl mx-auto px-4 py-24 text-center">
-      <h1 className="text-5xl font-bold tracking-tight">404</h1>
-      <p className="mt-2 text-slate-600">We couldn’t find that page.</p>
-      <a href="/" className="inline-flex items-center mt-6 rounded-2xl px-5 py-3 font-medium shadow-sm bg-sky-500 text-white hover:bg-sky-600">
-        Back to home
-      </a>
+    <section style={{padding:"64px 16px", textAlign:"center"}}>
+      <h1 style={{fontSize:"48px", margin:"0 0 8px"}}>404</h1>
+      <p style={{color:"#475569", margin:"0 0 24px"}}>We couldn’t find that page.</p>
+      <a href="/" style={{
+        display:"inline-block",
+        padding:"10px 16px",
+        borderRadius:"12px",
+        background:"#0284c7",
+        color:"#fff",
+        textDecoration:"none"
+      }}>Back to home</a>
     </section>
   );
 }
